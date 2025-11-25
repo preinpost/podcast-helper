@@ -1,0 +1,43 @@
+# Git
+.git
+.gitignore
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info
+dist
+build
+.pytest_cache
+.coverage
+htmlcov
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Kubernetes manifests
+k8s/
+
+# Documentation
+README.md
+*.md
+!pyproject.toml
+
+# Docker
+Dockerfile
+.dockerignore
+
+# UV cache
+.uv/
