@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 from dotenv import load_dotenv
-from pkg.bot import PodcastHelperBot
+from pkg.bot_v2 import run_bot
 
 
 def main():
@@ -19,8 +19,7 @@ def main():
 
     # 봇 시작
     try:
-        bot = PodcastHelperBot()
-        bot.run()
+        run_bot()
     except KeyboardInterrupt:
         print("\nBot stopped by user")
     except Exception as e:
