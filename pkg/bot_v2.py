@@ -249,7 +249,6 @@ def bot_init() -> Application:
         f"Allowed user IDs: {allowed_user_ids if allowed_user_ids else 'All users'}"
     )
 
-    ai_client = create_xai_client()
     application = Application.builder().token(token).post_init(post_init).build()
 
     # bot_data에 저장 (global 대신)
