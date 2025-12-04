@@ -9,8 +9,8 @@ from telegram.ext import (
     filters,
     ContextTypes,
 )
-# from pkg.openai import create_openai_client, analyze_text, analyze_image
-from pkg.xai import create_xai_client, analyze_text, analyze_image
+from pkg.openai import create_openai_client, analyze_text, analyze_image
+# from pkg.xai import create_xai_client, analyze_text, analyze_image
 MAX_MESSAGE_LENGTH = 4096  # Telegram 메시지 최대 길이
 
 
@@ -229,7 +229,7 @@ async def post_init(application: Application):
     """
     logger.info("Initializing AI Client inside the event loop...")
     # 여기서 client를 생성하여 bot_data에 넣습니다.
-    application.bot_data["ai_client"] = create_xai_client()
+    application.bot_data["ai_client"] = create_openai_client()
     
 
 def bot_init() -> Application:

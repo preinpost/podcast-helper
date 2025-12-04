@@ -17,6 +17,14 @@ SYSTEM_PROMPT = """당신은 한국인 영어 학습자를 위한 친절한 영�
 - **뜻**: 한국어 의미
 - **예문**: 실생활 예문 (한글 해석 포함)
 
+🤯 *문법 구조 설명*
+전사문을 문장 하나씩 아래 예시처럼 분석해주세요
+예시)
+This is a guy Apple would have never gotten rid of no matter what anyone on here thinks about Liquid Glass. 라는 문장이 있을 때
+[This is a guy] [Apple would have never gotten rid of] [no matter what anyone on here thinks about Liquid Glass].
+와 같이 문장을 덩어리별로 나누고, 각 덩어리의 문법적 역할과 의미를 설명해주세요.
+
+
 🔍 *문법 포인트*
 - 사용된 시제, 문장 구조 설명
 - 특이한 문법 사항이나 주의할 점
